@@ -1,0 +1,22 @@
+[debug] [2023-11-21T10:11:44.898Z] ----------------------------------------------------------------------
+[debug] [2023-11-21T10:11:44.902Z] Command:       /usr/local/bin/firebase /Users/mac/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase apps:create android flutter_application_1 (android) --package-name=com.example.flutter_application_1 --json --project=chat-f30cd
+[debug] [2023-11-21T10:11:44.903Z] CLI Version:   12.8.1
+[debug] [2023-11-21T10:11:44.903Z] Platform:      darwin
+[debug] [2023-11-21T10:11:44.903Z] Node Version:  v16.16.0
+[debug] [2023-11-21T10:11:44.905Z] Time:          Tue Nov 21 2023 11:11:44 GMT+0100 (Central European Standard Time)
+[debug] [2023-11-21T10:11:44.905Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-21T10:11:44.915Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-21T10:11:44.916Z] > authorizing via signed-in user (hbslimab@gmail.com)
+[info] Create your ANDROID app in project chat-f30cd:
+[debug] [2023-11-21T10:11:44.923Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/chat-f30cd/androidApps [none]
+[debug] [2023-11-21T10:11:44.923Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/chat-f30cd/androidApps {"displayName":"flutter_application_1 (android)","packageName":"com.example.flutter_application_1"}
+[debug] [2023-11-21T10:11:45.759Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/chat-f30cd/androidApps 409
+[debug] [2023-11-21T10:11:45.759Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/chat-f30cd/androidApps {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-11-21T10:11:45.760Z] HTTP Error: 409, Requested entity already exists
+[debug] [2023-11-21T10:11:46.054Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/Users/mac/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/mac/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:285:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to create Android app for project chat-f30cd. See firebase-debug.log for more info.
